@@ -1,7 +1,5 @@
 # Skinnable
 
-东方证券Android换肤Kotlin实现方案
-
 # 使用方法
 
 ## 1.引用Library

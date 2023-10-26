@@ -50,35 +50,30 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_text1"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/text_background"
-                android:gravity="center_vertical"
-                android:text="@string/assets_skin_night"
-                android:textColor="@color/text_color"
-                android:textSize="15sp"
-                app:drawableLeftCompat="@drawable/ic_assignment_turned_in_black_24dp"
-                app:drawableStartCompat="@drawable/ic_assignment_turned_in_black_24dp"
-                app:layout_constraintBottom_toTopOf="@id/tv_text2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:skinnable="true" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <com.util.skinnable.support.compat.widget.SkinCompatTextView
-                android:id="@+id/tv_text2"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginTop="15dp"
-                android:background="@color/text_background"
-                android:drawableStart="@drawable/ic_assignment_turned_in_black_24dp"
-                android:gravity="center_vertical"
-                android:text="@string/custom_text_view"
-                android:textColor="@color/text_color"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@id/tv_text3"
-                app:layout_constraintTop_toBottomOf="@id/tv_text1"
-                app:skinnable="true" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文本换肤：" />
+
+                <com.util.skinnable.support.compat.widget.SkinCompatTextView
+                    android:id="@+id/tv_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/text_background"
+                    android:drawableStart="@drawable/ic_assignment_turned_in_black_24dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/custom_text_view"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp"
+                    app:skinnable="true" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
             <TextView
                 android:id="@+id/tv_text3"

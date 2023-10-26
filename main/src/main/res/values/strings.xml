@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Skinnable</string>
     <string name="title_item_default">默认</string>
-    <string name="custom_text_view">内置Night</string>
-    <string name="assets_skin_night">Assets 内置Night</string>
+    <string name="custom_text_view">换肤</string>
+    <string name="assets_skin_night">更新布局</string>
 </resources>
